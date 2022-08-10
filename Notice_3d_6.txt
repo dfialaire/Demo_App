@@ -109,6 +109,9 @@ git branch
 	  branche2
 	* master
 Si on vérifie le fichier 3, normalement le texte sur la branche2 a disparu !!
+---
+si on veut fusionner les 2 versions :
+...sts_3d_6 (master) : git merge branche2
 
 
 
