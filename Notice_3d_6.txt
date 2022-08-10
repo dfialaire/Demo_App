@@ -11,5 +11,12 @@ git status (on aura le statut de note dépôt (local)) : il nous dit bien que po
 git add Bidon2.txt
 git status (on voit bien que le 1er fichier est tracké mais pas le 2ème)
 git add Notice_3d_6.txt
-git status (ok les 2 fichiers sont trackés.. si on modifie un fichier.. il nous le dira !! )
+git status (ok les 2 fichiers sont trackés.. si on modifie un fichier.. il nous le dira !! .. génial !)
+A présent, après avoir bien pris en photos (git add filename) les fichiers, on peut faire un backup (garder une version de statut actuel après modif)
+git commint -m "initial commit"
+	[master (root-commit) 3b4bef1] 1er commit
+ 	2 files changed, 16 insertions(+)
+ 	create mode 100644 Bidon2.txt
+ 	create mode 100644 Notice_3d_6.txt
+
 
