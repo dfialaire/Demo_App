@@ -19,4 +19,21 @@ git commint -m "initial commit"
  	create mode 100644 Bidon2.txt
  	create mode 100644 Notice_3d_6.txt
 
+	[master e4f2203] 1er commit
+ 	1 file changed, 8 insertions(+), 1 deletion(-)
+git status
+	On branch master
+	nothing to commit, working tree clean
+git log (pour voir qui a fait quel commit !)
+-------------------------------------------------
+Finalement au lieu de faire :
+git add file1
+git add file2..
+--> on peut faire git add -A
+git diff Notice_3d_6.txt
+
+
+
+
+
 
