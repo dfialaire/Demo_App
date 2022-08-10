@@ -1,0 +1,15 @@
+https://www.youtube.com/watch?v=TlQbEWHt3pY
+
+git config --global user.name "dfialaire" <-- git config --global user.name : doit renvoyer dfialaire
+git config --global user.email "dfialaire@gmail.com" <-- git config --global user.email : doit renvoyer dfialaire@gmail.com
+
+Aller à l'intérieur de son dossier de projet avec cd, et taper : 
+git init
+(il crée un dossier caché .git : )
+git status (on aura le statut de note dépôt (local)) : il nous dit bien que pour l'instant des fichiers sont non trackés !
+
+git add Bidon2.txt
+git status (on voit bien que le 1er fichier est tracké mais pas le 2ème)
+git add Notice_3d_6.txt
+git status (ok les 2 fichiers sont trackés.. si on modifie un fichier.. il nous le dira !! )
+
