@@ -1,4 +1,5 @@
 https://www.youtube.com/watch?v=TlQbEWHt3pY
+(Rappel q pour sortir d'un sous-menu git)
 
 git config --global user.name "dfialaire" <-- git config --global user.name : doit renvoyer dfialaire
 git config --global user.email "dfialaire@gmail.com" <-- git config --global user.email : doit renvoyer dfialaire@gmail.com
@@ -32,7 +33,7 @@ git add file2..
 --> on peut faire git add -A
 git diff Notice_3d_6.txt
 __________________________
-vid 4
+vid 4 : 5.34 : https://www.youtube.com/watch?v=C4NIsojTbps&list=PLlxQJeQRaKDRBd_FazeI7gLq5wyrt7f7J&index=4
 _____________________
 ON peut modifier 1 fichier en écrivant n'importe quoi
 faire un : git add -A
@@ -40,6 +41,16 @@ puis : git commit -m "on a écrit n"importe quoi"
 puis on fait un :  git log
 et on peut revenir à un autre moment de version en faisant :
 git reset --hard xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (où ici on a le N° de version du commit)
+---------------------------------
+vid 5 : https://www.youtube.com/watch?v=aQVqrzNZgFo&list=PLlxQJeQRaKDRBd_FazeI7gLq5wyrt7f7J&index=5
+-----------
+2.55 : dès fois, on souhaite que certains fichiers ne soient pas trackés, il suffira de les ajouter
+au niveau de gitignore : 
+-------------------------------------------
+vid 6 : https://www.youtube.com/watch?v=iSN1NPtaZCk&list=PLlxQJeQRaKDRBd_FazeI7gLq5wyrt7f7J&index=6
+------------------
+Création de branches du projet (la branche principale est la branche Master)
+git branch : on aura l'ensemble  des branches.. et on aura l'* qui nous dit où on est :
 
 
 
