@@ -31,6 +31,15 @@ git add file1
 git add file2..
 --> on peut faire git add -A
 git diff Notice_3d_6.txt
+__________________________
+vid 4
+_____________________
+ON peut modifier 1 fichier en écrivant n'importe quoi
+faire un : git add -A
+puis : git commit -m "on a écrit n"importe quoi"
+puis on fait un :  git log
+et on peut revenir à un autre moment de version en faisant :
+git reset --hard xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (où ici on a le N° de version du commit)
 
 
 
