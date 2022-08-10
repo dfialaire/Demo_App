@@ -1,4 +1,5 @@
 https://www.youtube.com/watch?v=TlQbEWHt3pY
+(Rappel q pour sortir d'un sous-menu git)
 
 git config --global user.name "dfialaire" <-- git config --global user.name : doit renvoyer dfialaire
 git config --global user.email "dfialaire@gmail.com" <-- git config --global user.email : doit renvoyer dfialaire@gmail.com
@@ -32,7 +33,7 @@ git add file2..
 --> on peut faire git add -A
 git diff Notice_3d_6.txt
 __________________________
-vid 4
+vid 4 : 5.34 : https://www.youtube.com/watch?v=C4NIsojTbps&list=PLlxQJeQRaKDRBd_FazeI7gLq5wyrt7f7J&index=4
 _____________________
 ON peut modifier 1 fichier en écrivant n'importe quoi
 faire un : git add -A
@@ -40,6 +41,75 @@ puis : git commit -m "on a écrit n"importe quoi"
 puis on fait un :  git log
 et on peut revenir à un autre moment de version en faisant :
 git reset --hard xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (où ici on a le N° de version du commit)
+---------------------------------
+vid 5 : https://www.youtube.com/watch?v=aQVqrzNZgFo&list=PLlxQJeQRaKDRBd_FazeI7gLq5wyrt7f7J&index=5
+-----------
+2.55 : dès fois, on souhaite que certains fichiers ne soient pas trackés, il suffira de les ajouter
+au niveau de gitignore : 
+-------------------------------------------
+vid 6 : https://www.youtube.com/watch?v=iSN1NPtaZCk&list=PLlxQJeQRaKDRBd_FazeI7gLq5wyrt7f7J&index=6
+------------------
+Création de branches du projet (la branche principale est la branche Master)
+git branch : on aura l'ensemble  des branches.. et on aura l'* qui nous dit où on est :
+--> * master : on est au niveau de la branche master
+Création d'une nouvelle branche :
+git checkout -b branche2
+--> Switched to a new branch 'branche2'
+==> dfial@PC-FialaireDavid MINGW64 ~/OneDrive/00000_BioPython
+/Source/Clone_nglview/tests_3d_6 (branche2) : donc on attérit dans la branche !
+git branch
+--> on voit qu'on a 2 branches
+* branche2
+  master
+----------
+Donc on peut faire des modif dans nos fichiers
+-- 
+on fait ensuite un : git status
+--> 
+	On branch branche2
+	Changes not staged for commit:
+  	(use "git add <file>..." to update what will be committed)
+  	(use "git restore <file>..." to discard changes in working directory)
+        	modified:   Notice_3d_6.txt
+        	modified:   file_text3.txt
+
+	no changes added to commit (use "git add" and/or "git commit -a")
+Puis on fait : git add -A
+git commit -m "Modif1 dans branche2"
+	[branche2 465520d] Modif1 dans branche2
+ 	2 files changed, 14 insertions(+), 1 deletion(-)
+git log
+--> 
+	commit 465520dfd28debc82bfd49146ca47fc26adb15d1 (HEAD -> branche2)
+	Author: dfialaire <dfialaire@gmail.com>
+	Date:   Wed Aug 10 22:30:58 2022 +0200
+
+    	Modif1 dans branche2
+
+	commit a65b7a061079244e1fe85e0d720efefda678424f (master)
+	Author: dfialaire <dfialaire@gmail.com>
+	Date:   Wed Aug 10 20:37:03 2022 +0200
+
+    	Ajout du c nimporte quoi dans fich 3
+
+	commit fb534530a16ad11821262a28803f9b51196c0fca
+	Author: dfialaire <dfialaire@gmail.com>
+	Date:   Wed Aug 10 20:35:35 2022 +0200
+
+    	Base 3 fichiers
+...
+- - - -> q pour sorir
+------
+git checkout master (on ne met pas -b, car ici on souhaite switcher vers la branche 
+			qui existe)
+(si on n'a pas oublié de tout commiter avant de switcher alors c'est ok)
+Switched to branch 'master'
+git branch
+--> 
+	  branche2
+	* master
+Si on vérifie le fichier 3, normalement le texte sur la branche2 a disparu !!
+
 
 
 
