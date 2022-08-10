@@ -51,6 +51,56 @@ vid 6 : https://www.youtube.com/watch?v=iSN1NPtaZCk&list=PLlxQJeQRaKDRBd_FazeI7g
 ------------------
 Création de branches du projet (la branche principale est la branche Master)
 git branch : on aura l'ensemble  des branches.. et on aura l'* qui nous dit où on est :
+--> * master : on est au niveau de la branche master
+Création d'une nouvelle branche :
+git checkout -b branche2
+--> Switched to a new branch 'branche2'
+==> dfial@PC-FialaireDavid MINGW64 ~/OneDrive/00000_BioPython
+/Source/Clone_nglview/tests_3d_6 (branche2) : donc on attérit dans la branche !
+git branch
+--> on voit qu'on a 2 branches
+* branche2
+  master
+----------
+Donc on peut faire des modif dans nos fichiers
+-- 
+on fait ensuite un : git status
+--> 
+	On branch branche2
+	Changes not staged for commit:
+  	(use "git add <file>..." to update what will be committed)
+  	(use "git restore <file>..." to discard changes in working directory)
+        	modified:   Notice_3d_6.txt
+        	modified:   file_text3.txt
+
+	no changes added to commit (use "git add" and/or "git commit -a")
+Puis on fait : git add -A
+git commit -m "Modif1 dans branche2"
+	[branche2 465520d] Modif1 dans branche2
+ 	2 files changed, 14 insertions(+), 1 deletion(-)
+git log
+--> 
+	commit 465520dfd28debc82bfd49146ca47fc26adb15d1 (HEAD -> branche2)
+	Author: dfialaire <dfialaire@gmail.com>
+	Date:   Wed Aug 10 22:30:58 2022 +0200
+
+    	Modif1 dans branche2
+
+	commit a65b7a061079244e1fe85e0d720efefda678424f (master)
+	Author: dfialaire <dfialaire@gmail.com>
+	Date:   Wed Aug 10 20:37:03 2022 +0200
+
+    	Ajout du c nimporte quoi dans fich 3
+
+	commit fb534530a16ad11821262a28803f9b51196c0fca
+	Author: dfialaire <dfialaire@gmail.com>
+	Date:   Wed Aug 10 20:35:35 2022 +0200
+
+    	Base 3 fichiers
+...
+- - - -> q pour sorir
+
+
 
 
 
